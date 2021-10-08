@@ -40,7 +40,7 @@ function SetProgressBar(props) {
                 />
               </Form.Group>
             </Col>
-            <Col xs={1}>
+            <Col xs={2}>
               <Form.Group className="mb-3">
                 <Form.Label>Prefix</Form.Label>
                 <Form.Control
