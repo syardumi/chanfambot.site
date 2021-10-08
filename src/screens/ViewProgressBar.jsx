@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import { ProgressBar, Button, Nav, Navbar, Container, Row, Col } from 'react-bootstrap';
+import { ProgressBar, Button, Container, Row, Col } from 'react-bootstrap';
+import { Header } from '../components'
 
 function ViewProgressBar(props) {
   const progressCurrent = props.customInputs.currentProgress
@@ -16,13 +17,7 @@ function ViewProgressBar(props) {
   return (
     <div className="ViewProgressBar">
       { props.customInputs.showHeader &&
-        <Navbar bg="dark" variant="dark">
-          <Container>
-            <Navbar.Brand>Progress Bar</Navbar.Brand>
-            <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link href="/progress-bar/set">Set Values</Nav.Link></Nav.Item>
-          </Container>
-        </Navbar>
+        <Header />
       }
       <Container>
         <h1>{props.customInputs.navTitle}</h1>

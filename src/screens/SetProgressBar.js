@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Alert, Form, Button, Container, Navbar, Nav, Row, Col } from 'react-bootstrap';
+import { Alert, Form, Button, Container, Row, Col } from 'react-bootstrap';
+import { Header } from '../components'
 import { SketchPicker } from 'react-color';
 
 function SetProgressBar(props) {
@@ -20,12 +21,7 @@ function SetProgressBar(props) {
 
   return (
     <div className="SetProgressBar">
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand>Set Progress Bar Properties</Navbar.Brand>
-          <Nav.Item><Nav.Link href="/progress-bar">View It!</Nav.Link></Nav.Item>
-        </Container>
-      </Navbar>
+      <Header />
       <Container>
         <Alert show={showAlert} variant="success">
           <Alert.Heading>Saved!</Alert.Heading>
